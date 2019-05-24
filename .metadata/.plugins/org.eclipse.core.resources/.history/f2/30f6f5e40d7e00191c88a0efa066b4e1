@@ -1,0 +1,16 @@
+package Main;
+import java.util.*;
+
+import Aplayer.APlayer;
+
+public class Main {
+public static void main(String[] args) {
+	APlayer p1 = new APlayer("Tolu");
+	p1.gridInitial(10, 10);
+	Scanner user_input = new Scanner(System.in);
+	
+	while(true) {
+           System.out.println("Enter a direction");
+	}
+}
+}

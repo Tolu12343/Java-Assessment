@@ -1,0 +1,11 @@
+package Main;
+
+import Aplayer.APlayer;
+
+public class Main {
+public static void main(String[] args) {
+	APlayer p1 = new APlayer("Tolu");
+	p1.gridInitial(10, 10);
+	p1.gameplay("south");
+}
+}

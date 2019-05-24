@@ -1,0 +1,42 @@
+package Main;
+import java.util.*;
+
+import Aplayer.APlayer;
+
+public class Main {
+public static void main(String[] args) {
+	Scanner user_input = new Scanner(System.in);
+	System.out.println("WELCOME TO THE TREASURE GAME! LET'S SEE IF YOU AN MAKE IT ALIVE AND FIND THE TREASURE!");
+	System.out.println("");
+	System.out.println("To begin, player, enter your name or player name");
+	
+	String name = user_input.next();
+	APlayer p1 = new APlayer(name);
+	while(true) {
+		    System.out.println("");
+			System.out.println("Enter a row for the grid (must be an even number ) Do you want a challenge? choose numbers > 20");
+			int gridRow = user_input.nextInt();
+			System.out.println("Enter a column for the grid (must be an even number). Do you want a challenge? choose numbers > 20");
+			int gridCol= user_input.nextInt();
+			p1.gridInitial (gridRow, gridCol);
+			if( p1.startChecker) {
+				break;
+			}
+	}
+		
+	
+	while(true) {
+		System.out.println("");
+		System.out.println("Let's begin this game!!");
+		System.out.println("");
+         System.out.println(p1.name +", enter a direction (north, east, south or west");
+          String dir = user_input.next();
+	}
+	
+	
+	
+	
+
+
+}
+}
